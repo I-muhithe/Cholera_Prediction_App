@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Loading your saved model. Be sure to change the path if needed
-model = joblib.load("C:/ENGAGE/cholera_model.joblib") # Changed path
+model = joblib.load("cholera_model.joblib") # Changed path
 
 st.title('Cholera Prediction App') # Changed title
 st.write("This app predicts the probability of someone having cholera based on their age and test result.") # Changed description
@@ -42,4 +42,5 @@ if st.button('Predict'):
     # we can interpret the output as a score and potentially threshold it.
     # However, since the goal is predicting probability, a classification model is more suitable.
     # Given the linear regression model, we'll display the predicted value and note it's a score.
+
     ##st.write(f'Predicted score (interpretation needed for probability): {prediction[0]:.2f}')
